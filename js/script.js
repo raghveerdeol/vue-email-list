@@ -8,14 +8,15 @@ createApp({
         }
     },
     methods:{
-        getEmail(){
+        getEmail: () => {
             let data = [];
-            axios.get('https://flynn.boolean.careers/exercises/api/random/mail ').then((response) => {
-                for (let index = 0; data.length < 10; index++) {
+            for (let index = 0; index < 10; index++) {
+                axios.get('https://flynn.boolean.careers/exercises/api/random/mail ').then(function (response) {
                     data.push(response.data.response);
-                }
-                this.emails = data
-            })
+                })
+            }
+            this.emails = data;
+            console.log(data, this.emails)
         }
     },
     created(){

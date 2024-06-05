@@ -6,5 +6,6 @@ Far comparire gli indirizzi email solamente quando sono stati tutti generati. --
 -aggiungo vue;
 -creo un array vuoto;
 -creo un metodo getEmail nel quale al interno di un ciclo for da 0 a 10 inserisci axios.get(API);
+-chiamo il metodo in created();
 -pusho l'email generate nel array;
 -richiamo l'array con vue per visualizzare l'email in paggina;
